@@ -2,6 +2,7 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
+  <meta name="referrer" content="no-referrer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pixel YCH Carousel</title>
   <style>
@@ -139,6 +140,7 @@
         const  = document.createElement('div');
         .className = 'slide';
         const img = document.createElement('img');
+        img.referrerPolicy = 'no-referrer';
         img.src = url;
         img.onclick = () => {
           document.getElementById('lightbox-img').src = url;
